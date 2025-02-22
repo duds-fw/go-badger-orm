@@ -35,4 +35,4 @@ jobs:
             badgercli-linux
             badgercli-mac
             badgercli-win.exe
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
