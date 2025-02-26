@@ -1,3 +1,5 @@
+[![Release BadgerCLI](https://github.com/duds-fw/go-badger-orm/actions/workflows/release.yml/badge.svg)](https://github.com/duds-fw/go-badger-orm/actions/workflows/release.yml)
+
 # Badger ORM
 
 Badger ORM is a lightweight Object-Relational Mapping (ORM) library for Go, built on top of the Badger key-value database. It provides a simple and efficient way to interact with your data using Go structs.
