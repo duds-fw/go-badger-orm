@@ -5,10 +5,18 @@ import (
 	"os"
 
 	"github.com/duds-fw/go-badger-orm/badgerorm"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
-	db, _ := badgerorm.NewBadgerORM("data")
+	config := badgerorm.Config{
+		DBPath:     "data",
+		LogLevel:   logrus.DebugLevel,
+		LogOutput:  "console",
+		MemoryMode: true,
+		SyncWrites: true,
+	}
+	db, _ := badgerorm.NewBadgerORM(config)
 	defer db.Close()
 
 	if len(os.Args) < 2 {
