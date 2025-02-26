@@ -1,6 +1,6 @@
 module github.com/duds-fw/go-badger-orm
 
-go 1.23.4
+go 1.23
 
 require github.com/dgraph-io/badger/v4 v4.5.1
 
